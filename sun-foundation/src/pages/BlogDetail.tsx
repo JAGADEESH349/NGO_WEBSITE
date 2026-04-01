@@ -102,7 +102,7 @@ export default function BlogDetail() {
                   <HoverCardTrigger asChild>
                     <div className="flex items-center gap-2 cursor-pointer">
                       <Avatar className="w-9 h-9">
-                        <AvatarFallback className="bg-saffron-100 dark:bg-saffron-950 text-saffron-600 dark:text-saffron-400 text-sm font-bold font-display">
+                        <AvatarFallback className="bg-navy-100 dark:bg-navy-950 text-navy-600 dark:text-navy-400 text-sm font-bold font-display">
                           {post.author.initials}
                         </AvatarFallback>
                       </Avatar>
@@ -115,13 +115,13 @@ export default function BlogDetail() {
                   <HoverCardContent className="w-72">
                     <div className="flex gap-3">
                       <Avatar className="w-12 h-12">
-                        <AvatarFallback className="bg-saffron-100 dark:bg-saffron-950 text-saffron-600 font-bold font-display">
+                        <AvatarFallback className="bg-navy-100 dark:bg-navy-950 text-navy-600 font-bold font-display">
                           {post.author.initials}
                         </AvatarFallback>
                       </Avatar>
                       <div>
                         <p className="font-bold font-display text-foreground">{post.author.name}</p>
-                        <p className="text-sm text-saffron-500">{post.author.role}</p>
+                        <p className="text-sm text-navy-500">{post.author.role}</p>
                         <p className="text-sm text-muted-foreground mt-1">{post.author.bio}</p>
                       </div>
                     </div>
@@ -144,7 +144,7 @@ export default function BlogDetail() {
                 className="prose prose-lg dark:prose-invert max-w-none font-body
                   prose-headings:font-display prose-headings:text-foreground
                   prose-p:text-foreground/80 prose-p:leading-relaxed
-                  prose-a:text-saffron-500 prose-a:no-underline hover:prose-a:underline"
+                  prose-a:text-navy-500 prose-a:no-underline hover:prose-a:underline"
                 dangerouslySetInnerHTML={{ __html: post.content }}
               />
 
@@ -188,7 +188,7 @@ export default function BlogDetail() {
                             className="w-full h-28 object-cover group-hover:scale-105 transition-transform duration-200"
                           />
                           <div className="p-3">
-                            <p className="text-sm font-semibold font-body text-foreground line-clamp-2 group-hover:text-saffron-500 transition-colors">
+                            <p className="text-sm font-semibold font-body text-foreground line-clamp-2 group-hover:text-navy-500 transition-colors">
                               {related.title}
                             </p>
                             <p className="text-xs text-muted-foreground mt-1">{related.date} • {related.readTime} min</p>
@@ -201,7 +201,7 @@ export default function BlogDetail() {
               </div>
 
               {/* Volunteer CTA */}
-              <Card className="bg-saffron-gradient border-0 text-white overflow-hidden">
+              <Card className="bg-navy-gradient border-0 text-white overflow-hidden">
                 <CardContent className="p-5">
                   <h3 className="font-bold font-display mb-2">Want to Help?</h3>
                   <p className="text-sm text-white/80 mb-4 font-body">

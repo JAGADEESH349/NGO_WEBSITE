@@ -14,7 +14,7 @@ const events = [
     location: 'Vijayawada, Andhra Pradesh',
     description: 'Free health checkups, eye tests, and dental care for 500+ families in rural AP.',
     category: 'Healthcare',
-    badgeVariant: 'saffron' as const,
+    badgeVariant: 'navy' as const,
     day: '15',
     month: 'APR',
   },
@@ -25,7 +25,7 @@ const events = [
     location: 'Guntur District, AP',
     description: 'Teaching basic computer skills and internet safety to 200 village students.',
     category: 'Education',
-    badgeVariant: 'forest' as const,
+    badgeVariant: 'slate' as const,
     day: '22',
     month: 'APR',
   },
@@ -54,12 +54,12 @@ export default function UpcomingEvents() {
           animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
         >
           <div>
-            <p className="text-saffron-500 font-semibold font-body text-sm uppercase tracking-widest mb-2">What's Coming</p>
+            <p className="text-navy-500 font-semibold font-body text-sm uppercase tracking-widest mb-2">What's Coming</p>
             <h2 className="text-4xl md:text-5xl font-bold font-display text-foreground">
               Upcoming Events
             </h2>
           </div>
-          <Button asChild variant="saffron-outline" size="sm">
+          <Button asChild variant="navy-outline" size="sm">
             <Link to="/events" className="flex items-center gap-1.5">
               View All Events <ArrowRight className="w-4 h-4" />
             </Link>
@@ -79,7 +79,7 @@ export default function UpcomingEvents() {
                   <CardContent className="p-0">
                     <div className="flex">
                       {/* Date badge */}
-                      <div className="w-20 flex-shrink-0 bg-saffron-500 flex flex-col items-center justify-center py-5 px-2">
+                      <div className="w-20 flex-shrink-0 bg-navy-500 flex flex-col items-center justify-center py-5 px-2">
                         <p className="text-white text-3xl font-bold font-display leading-none">{event.day}</p>
                         <p className="text-white/80 text-xs font-semibold tracking-widest mt-1">{event.month}</p>
                       </div>
@@ -93,18 +93,18 @@ export default function UpcomingEvents() {
                         </h3>
                         <div className="space-y-1.5 mb-3">
                           <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
-                            <Clock className="w-3.5 h-3.5 text-saffron-500" />
+                            <Clock className="w-3.5 h-3.5 text-navy-500" />
                             {event.time}
                           </div>
                           <div className="flex items-center gap-1.5 text-xs text-muted-foreground">
-                            <MapPin className="w-3.5 h-3.5 text-forest-500" />
+                            <MapPin className="w-3.5 h-3.5 text-slate-500" />
                             {event.location}
                           </div>
                         </div>
                         <p className="text-sm text-muted-foreground font-body leading-relaxed mb-4">
                           {event.description}
                         </p>
-                        <Button asChild variant="saffron" size="sm" className="w-full">
+                        <Button asChild variant="navy" size="sm" className="w-full">
                           <Link to="/events">Register</Link>
                         </Button>
                       </div>

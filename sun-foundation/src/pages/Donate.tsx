@@ -137,8 +137,8 @@ export default function Donate() {
                         onClick={() => handlePresetAmount(val)}
                         className={`py-3 rounded-lg text-base font-bold font-body border-2 transition-all ${
                           amount === val && !customAmount
-                            ? 'border-saffron-500 bg-saffron-50 dark:bg-saffron-950 text-saffron-600 dark:text-saffron-400'
-                            : 'border-border hover:border-saffron-400 text-foreground'
+                            ? 'border-navy-500 bg-navy-50 dark:bg-navy-950 text-navy-600 dark:text-navy-400'
+                            : 'border-border hover:border-navy-400 text-foreground'
                         }`}
                       >
                         ₹{val.toLocaleString('en-IN')}
@@ -163,7 +163,7 @@ export default function Donate() {
                       <div
                         key={val}
                         className={`flex items-center justify-between py-1.5 text-sm font-body transition-colors ${
-                          amount === val ? 'text-saffron-600 dark:text-saffron-400 font-semibold' : 'text-muted-foreground'
+                          amount === val ? 'text-navy-600 dark:text-navy-400 font-semibold' : 'text-muted-foreground'
                         }`}
                       >
                         <span>₹{val.toLocaleString('en-IN')}</span>
@@ -212,7 +212,7 @@ export default function Donate() {
                           <FormItem>
                             <FormLabel className="flex items-center gap-1.5">
                               PAN Number
-                              <span className="text-xs bg-forest-100 dark:bg-forest-950 text-forest-600 dark:text-forest-400 px-1.5 py-0.5 rounded-full">80G Exempt</span>
+                              <span className="text-xs bg-slate-100 dark:bg-slate-950 text-slate-600 dark:text-slate-400 px-1.5 py-0.5 rounded-full">80G Exempt</span>
                             </FormLabel>
                             <FormControl><Input placeholder="ABCDE1234F (optional)" {...field} /></FormControl>
                             <FormMessage />
@@ -233,7 +233,7 @@ export default function Donate() {
                       <div className="pt-2">
                         <Button
                           type="submit"
-                          variant="saffron"
+                          variant="navy"
                           size="lg"
                           className="w-full gap-2"
                           disabled={form.formState.isSubmitting}
@@ -242,7 +242,7 @@ export default function Donate() {
                           Donate ₹{amount.toLocaleString('en-IN')} Now
                         </Button>
                         <p className="text-center text-xs text-muted-foreground mt-3 flex items-center justify-center gap-1.5">
-                          <Shield className="w-3.5 h-3.5 text-forest-500" />
+                          <Shield className="w-3.5 h-3.5 text-slate-500" />
                           Secured by Razorpay. 256-bit SSL encryption.
                         </p>
                       </div>
@@ -282,10 +282,10 @@ export default function Donate() {
             {/* Sidebar */}
             <div className="space-y-5">
               {/* Tax benefit */}
-              <Card className="border-forest-200 dark:border-forest-800 bg-forest-50 dark:bg-forest-950/50 shadow-sm">
+              <Card className="border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950/50 shadow-sm">
                 <CardContent className="p-5">
                   <div className="flex items-start gap-3">
-                    <Info className="w-5 h-5 text-forest-500 mt-0.5 flex-shrink-0" />
+                    <Info className="w-5 h-5 text-slate-500 mt-0.5 flex-shrink-0" />
                     <div>
                       <h3 className="font-bold font-display text-foreground mb-2">80G Tax Exemption</h3>
                       <p className="text-sm text-muted-foreground font-body leading-relaxed mb-3">
@@ -335,7 +335,7 @@ export default function Donate() {
                     ].map((donor) => (
                       <div key={donor.name + donor.time} className="flex items-center justify-between text-sm font-body">
                         <div className="flex items-center gap-2">
-                          <div className="w-7 h-7 rounded-full bg-saffron-100 dark:bg-saffron-950 flex items-center justify-center text-saffron-600 dark:text-saffron-400">
+                          <div className="w-7 h-7 rounded-full bg-navy-100 dark:bg-navy-950 flex items-center justify-center text-navy-600 dark:text-navy-400">
                             <Heart className="w-3.5 h-3.5 fill-current" />
                           </div>
                           <div>
@@ -343,7 +343,7 @@ export default function Donate() {
                             <p className="text-xs text-muted-foreground">{donor.time}</p>
                           </div>
                         </div>
-                        <Badge variant="saffron" className="text-xs">{donor.amount}</Badge>
+                        <Badge variant="navy" className="text-xs">{donor.amount}</Badge>
                       </div>
                     ))}
                   </div>
@@ -359,7 +359,7 @@ export default function Donate() {
         <DialogContent className="sm:max-w-md">
           <DialogHeader>
             <div className="flex justify-center mb-4">
-              <CheckCircle2 className="w-16 h-16 text-forest-500" />
+              <CheckCircle2 className="w-16 h-16 text-slate-500" />
             </div>
             <DialogTitle className="text-2xl font-bold font-display text-center">Donation Successful!</DialogTitle>
             <DialogDescription className="text-center font-body mt-2">
@@ -375,7 +375,7 @@ export default function Donate() {
               <Separator />
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Amount</span>
-                <span className="font-bold text-saffron-500">₹{receiptData.amount.toLocaleString('en-IN')}</span>
+                <span className="font-bold text-navy-500">₹{receiptData.amount.toLocaleString('en-IN')}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-muted-foreground">Date</span>
@@ -387,7 +387,7 @@ export default function Donate() {
             <Button variant="outline" className="flex-1 gap-1.5">
               <Download className="w-4 h-4" /> Receipt
             </Button>
-            <Button variant="saffron" className="flex-1" onClick={() => setSuccessOpen(false)}>
+            <Button variant="navy" className="flex-1" onClick={() => setSuccessOpen(false)}>
               Continue
             </Button>
           </div>

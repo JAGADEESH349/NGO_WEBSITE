@@ -10,10 +10,10 @@ import { useCountUp } from '@/hooks/useCountUp'
 import { useIntersectionObserver } from '@/hooks/useIntersectionObserver'
 
 const upcomingEvents = [
-  { title: 'Annual Health Camp 2026', date: 'Apr 15, 2026', day: '15', month: 'APR', time: '9:00 AM – 4:00 PM', location: 'Vijayawada, AP', description: 'Free health checkups, eye tests, dental care, blood sugar, and BP monitoring for 500+ families.', category: 'Healthcare', badge: 'saffron' as const },
-  { title: 'Digital Literacy Drive', date: 'Apr 22, 2026', day: '22', month: 'APR', time: '10:00 AM – 1:00 PM', location: 'Guntur District, AP', description: 'Teaching computer basics, internet safety, and UPI payments to 200 village students.', category: 'Education', badge: 'forest' as const },
+  { title: 'Annual Health Camp 2026', date: 'Apr 15, 2026', day: '15', month: 'APR', time: '9:00 AM – 4:00 PM', location: 'Vijayawada, AP', description: 'Free health checkups, eye tests, dental care, blood sugar, and BP monitoring for 500+ families.', category: 'Healthcare', badge: 'navy' as const },
+  { title: 'Digital Literacy Drive', date: 'Apr 22, 2026', day: '22', month: 'APR', time: '10:00 AM – 1:00 PM', location: 'Guntur District, AP', description: 'Teaching computer basics, internet safety, and UPI payments to 200 village students.', category: 'Education', badge: 'slate' as const },
   { title: 'Women Empowerment Summit', date: 'May 5, 2026', day: '05', month: 'MAY', time: '11:00 AM – 5:00 PM', location: 'Krishna District, AP', description: 'Leadership workshops, legal aid clinics, and skill development for rural women.', category: 'Women Empowerment', badge: 'golden' as const },
-  { title: 'Sunday Food Drive', date: 'Every Sunday', day: '☀', month: 'SUN', time: '8:00 AM – 10:00 AM', location: 'Vijayawada, AP', description: 'Our weekly tradition — distributing nutritious meals to 200+ families. Everyone welcome!', category: 'Food', badge: 'saffron' as const },
+  { title: 'Sunday Food Drive', date: 'Every Sunday', day: '☀', month: 'SUN', time: '8:00 AM – 10:00 AM', location: 'Vijayawada, AP', description: 'Our weekly tradition — distributing nutritious meals to 200+ families. Everyone welcome!', category: 'Food', badge: 'navy' as const },
 ]
 
 const pastEvents = [
@@ -42,7 +42,7 @@ function ImpactRow() {
   }
 
   return (
-    <div ref={ref as React.RefObject<HTMLDivElement>} className="bg-saffron-gradient py-12 mt-10 rounded-2xl">
+    <div ref={ref as React.RefObject<HTMLDivElement>} className="bg-navy-gradient py-12 mt-10 rounded-2xl">
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 px-8">
         {stats.map(s => <Stat key={s.label} {...s} isVisible={isIntersecting} />)}
       </div>
@@ -53,7 +53,7 @@ function ImpactRow() {
 type EventItem = {
   title: string; date: string; day: string; month: string; time: string;
   location: string; description: string; category: string;
-  badge: 'saffron' | 'forest' | 'golden' | 'secondary' | 'outline' | 'default' | 'destructive';
+  badge: 'navy' | 'slate' | 'golden' | 'secondary' | 'outline' | 'default' | 'destructive';
   highlights?: string
 }
 function EventCard({ event, isPast = false, index }: { event: EventItem, isPast?: boolean, index: number }) {
@@ -66,7 +66,7 @@ function EventCard({ event, isPast = false, index }: { event: EventItem, isPast?
       <Card className="shadow-sm hover:shadow-md transition-shadow overflow-hidden">
         <CardContent className="p-0">
           <div className="flex">
-            <div className={`w-20 flex-shrink-0 ${isPast ? 'bg-muted-foreground/80' : 'bg-saffron-500'} flex flex-col items-center justify-center py-5`}>
+            <div className={`w-20 flex-shrink-0 ${isPast ? 'bg-muted-foreground/80' : 'bg-navy-500'} flex flex-col items-center justify-center py-5`}>
               <p className={`text-3xl font-bold font-display leading-none ${isPast ? 'text-white/90' : 'text-white'}`}>{event.day}</p>
               <p className={`text-xs font-semibold tracking-widest mt-1 ${isPast ? 'text-white/60' : 'text-white/80'}`}>{event.month}</p>
             </div>
@@ -81,7 +81,7 @@ function EventCard({ event, isPast = false, index }: { event: EventItem, isPast?
                   <Clock className="w-3.5 h-3.5" /> {event.time}
                 </span>
                 <span className="flex items-center gap-1 text-xs text-muted-foreground">
-                  <MapPin className="w-3.5 h-3.5 text-saffron-500" /> {event.location}
+                  <MapPin className="w-3.5 h-3.5 text-navy-500" /> {event.location}
                 </span>
               </div>
               <p className="text-sm text-muted-foreground font-body leading-relaxed mb-4">{event.description}</p>
@@ -91,7 +91,7 @@ function EventCard({ event, isPast = false, index }: { event: EventItem, isPast?
                   {(event as { highlights?: string }).highlights || 'View Highlights'}
                 </Button>
               ) : (
-                <Button variant="saffron" size="sm">Register Now</Button>
+                <Button variant="navy" size="sm">Register Now</Button>
               )}
             </div>
           </div>
@@ -119,10 +119,10 @@ export default function Events() {
         <div className="container max-w-7xl mx-auto px-4">
           <Tabs defaultValue="upcoming">
             <TabsList className="mb-8 bg-muted">
-              <TabsTrigger value="upcoming" className="data-[state=active]:bg-saffron-500 data-[state=active]:text-white">
+              <TabsTrigger value="upcoming" className="data-[state=active]:bg-navy-500 data-[state=active]:text-white">
                 Upcoming Events ({upcomingEvents.length})
               </TabsTrigger>
-              <TabsTrigger value="past" className="data-[state=active]:bg-saffron-500 data-[state=active]:text-white">
+              <TabsTrigger value="past" className="data-[state=active]:bg-navy-500 data-[state=active]:text-white">
                 Past Events ({pastEvents.length})
               </TabsTrigger>
             </TabsList>

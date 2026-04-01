@@ -32,9 +32,9 @@ export default function AdminVolunteers() {
   }
 
   const badgeVariant = (status: Status) => {
-    if (status === 'approved') return 'forest' as const
+    if (status === 'approved') return 'slate' as const
     if (status === 'rejected') return 'destructive' as const
-    return 'saffron' as const
+    return 'navy' as const
   }
 
   return (
@@ -82,7 +82,7 @@ export default function AdminVolunteers() {
                   </td>
                   <td className="p-4 hidden md:table-cell text-muted-foreground">{v.phone}</td>
                   <td className="p-4 hidden lg:table-cell">
-                    <Badge variant="saffron" className="text-xs">{v.team}</Badge>
+                    <Badge variant="navy" className="text-xs">{v.team}</Badge>
                   </td>
                   <td className="p-4 hidden lg:table-cell text-muted-foreground">{v.cityState}</td>
                   <td className="p-4 text-muted-foreground text-xs">{v.date}</td>
@@ -94,7 +94,7 @@ export default function AdminVolunteers() {
                       <div className="flex gap-1">
                         <button
                           onClick={() => updateStatus(v.id, 'approved')}
-                          className="p-1.5 rounded-md text-forest-500 hover:bg-forest-50 dark:hover:bg-forest-950 transition-colors"
+                          className="p-1.5 rounded-md text-slate-500 hover:bg-slate-50 dark:hover:bg-slate-950 transition-colors"
                           aria-label="Approve"
                         >
                           <CheckCircle className="w-4 h-4" />

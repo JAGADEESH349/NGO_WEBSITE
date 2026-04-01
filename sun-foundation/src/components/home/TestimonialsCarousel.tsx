@@ -78,7 +78,7 @@ export default function TestimonialsCarousel() {
           animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
         >
           <div>
-            <p className="text-saffron-500 font-semibold font-body text-sm uppercase tracking-widest mb-2">What People Say</p>
+            <p className="text-navy-500 font-semibold font-body text-sm uppercase tracking-widest mb-2">What People Say</p>
             <h2 className="text-4xl md:text-5xl font-bold font-display text-foreground">
               Stories of Change
             </h2>
@@ -113,7 +113,7 @@ export default function TestimonialsCarousel() {
                   {/* Author */}
                   <div className="flex items-center gap-3 pt-4 border-t">
                     <Avatar className="w-10 h-10">
-                      <AvatarFallback className="bg-saffron-100 dark:bg-saffron-900 text-saffron-600 dark:text-saffron-400 text-sm font-bold font-display">
+                      <AvatarFallback className="bg-navy-100 dark:bg-navy-900 text-navy-600 dark:text-navy-400 text-sm font-bold font-display">
                         {t.initials}
                       </AvatarFallback>
                     </Avatar>

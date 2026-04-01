@@ -61,7 +61,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
 
   const navBg = transparent
     ? 'bg-transparent'
-    : 'bg-white/[0.97] dark:bg-[#120a04]/[0.97] backdrop-blur-md shadow-[0_2px_24px_rgba(232,83,10,0.10)] border-b border-saffron-100/60 dark:border-saffron-900/30'
+    : 'bg-white/[0.97] dark:bg-[#120a04]/[0.97] backdrop-blur-md shadow-[0_2px_24px_rgba(232,83,10,0.10)] border-b border-navy-100/60 dark:border-navy-900/30'
 
   return (
     <motion.header
@@ -74,7 +74,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
 
         {/* Logo */}
         <Link to="/home" className="flex items-center gap-2.5 group flex-shrink-0">
-          <div className="w-9 h-9 rounded-full bg-saffron-gradient flex items-center justify-center shadow-md group-hover:scale-105 transition-transform duration-200">
+          <div className="w-9 h-9 rounded-full bg-navy-gradient flex items-center justify-center shadow-md group-hover:scale-105 transition-transform duration-200">
             <SunLogo size={20} />
           </div>
           <div className="leading-tight">
@@ -86,7 +86,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
             </span>
             <span className={cn(
               'block text-[9px] font-body tracking-[0.18em] uppercase transition-colors duration-300',
-              transparent ? 'text-white/65' : 'text-saffron-500/80 dark:text-saffron-400/70'
+              transparent ? 'text-white/65' : 'text-navy-500/80 dark:text-navy-400/70'
             )}>
               Student Union for Nation
             </span>
@@ -106,8 +106,8 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
                     ? 'text-golden bg-white/15 font-semibold'
                     : 'text-white/90 hover:text-white hover:bg-white/12'
                   : isActive
-                    ? 'text-saffron-600 dark:text-saffron-400 bg-saffron-50 dark:bg-saffron-950/50 font-semibold'
-                    : 'text-gray-700 dark:text-gray-200 hover:text-saffron-600 dark:hover:text-saffron-400 hover:bg-saffron-50/60 dark:hover:bg-saffron-950/30'
+                    ? 'text-navy-600 dark:text-navy-400 bg-navy-50 dark:bg-navy-950/50 font-semibold'
+                    : 'text-gray-700 dark:text-gray-200 hover:text-navy-600 dark:hover:text-navy-400 hover:bg-navy-50/60 dark:hover:bg-navy-950/30'
               )}
             >
               {link.label}
@@ -124,7 +124,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
               'p-2 rounded-lg transition-all duration-200',
               transparent
                 ? 'text-white/80 hover:text-white hover:bg-white/12'
-                : 'text-gray-600 dark:text-gray-300 hover:text-saffron-600 dark:hover:text-saffron-400 hover:bg-saffron-50/60 dark:hover:bg-saffron-950/30'
+                : 'text-gray-600 dark:text-gray-300 hover:text-navy-600 dark:hover:text-navy-400 hover:bg-navy-50/60 dark:hover:bg-navy-950/30'
             )}
           >
             {theme === 'dark'
@@ -133,7 +133,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
             }
           </button>
 
-          <Button asChild variant="saffron" size="sm" className="hidden sm:flex gap-1.5 rounded-lg font-semibold text-sm px-4">
+          <Button asChild variant="navy" size="sm" className="hidden sm:flex gap-1.5 rounded-lg font-semibold text-sm px-4">
             <Link to="/donate">
               <Heart className="w-3.5 h-3.5 fill-white" />
               Donate
@@ -149,7 +149,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
                   'lg:hidden p-2 rounded-lg transition-all duration-200',
                   transparent
                     ? 'text-white/80 hover:text-white hover:bg-white/12'
-                    : 'text-gray-700 dark:text-gray-200 hover:bg-saffron-50/60 dark:hover:bg-saffron-950/30'
+                    : 'text-gray-700 dark:text-gray-200 hover:bg-navy-50/60 dark:hover:bg-navy-950/30'
                 )}
               >
                 <Menu className="w-5 h-5" />
@@ -158,12 +158,12 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
             <SheetContent side="right" className="w-[300px] p-0">
               {/* Mobile menu header */}
               <div className="flex items-center gap-2.5 px-6 py-5 border-b border-border">
-                <div className="w-9 h-9 rounded-full bg-saffron-gradient flex items-center justify-center shadow">
+                <div className="w-9 h-9 rounded-full bg-navy-gradient flex items-center justify-center shadow">
                   <SunLogo size={18} />
                 </div>
                 <div>
                   <p className="font-bold font-display text-foreground text-sm leading-tight">SUN Foundation</p>
-                  <p className="text-[9px] text-saffron-500 tracking-[0.18em] uppercase">Student Union for Nation</p>
+                  <p className="text-[9px] text-navy-500 tracking-[0.18em] uppercase">Student Union for Nation</p>
                 </div>
               </div>
               <div className="flex flex-col p-4 gap-0.5">
@@ -174,8 +174,8 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
                       className={({ isActive }) => cn(
                         'px-4 py-2.5 rounded-lg text-sm font-medium font-body transition-colors',
                         isActive
-                          ? 'bg-saffron-50 dark:bg-saffron-950/50 text-saffron-600 dark:text-saffron-400 font-semibold'
-                          : 'text-foreground hover:bg-muted hover:text-saffron-600 dark:hover:text-saffron-400'
+                          ? 'bg-navy-50 dark:bg-navy-950/50 text-navy-600 dark:text-navy-400 font-semibold'
+                          : 'text-foreground hover:bg-muted hover:text-navy-600 dark:hover:text-navy-400'
                       )}
                     >
                       {link.label}
@@ -184,7 +184,7 @@ export default function Navbar({ theme, toggleTheme }: NavbarProps) {
                 ))}
               </div>
               <div className="px-4 pb-6 pt-2 border-t border-border">
-                <Button asChild variant="saffron" className="w-full gap-2 font-semibold">
+                <Button asChild variant="navy" className="w-full gap-2 font-semibold">
                   <SheetClose asChild>
                     <Link to="/donate">
                       <Heart className="w-4 h-4 fill-white" />

@@ -22,7 +22,7 @@ export default function PageHero({ title, subtitle, breadcrumbs = [], bgImage }:
     >
       {/* Background pattern */}
       {!bgImage && (
-        <div className="absolute inset-0 bg-gradient-to-br from-saffron-500/10 via-background to-forest-500/10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-navy-500/10 via-background to-slate-500/10" />
       )}
       {bgImage && <div className="absolute inset-0 bg-black/60" />}
 
@@ -49,7 +49,7 @@ export default function PageHero({ title, subtitle, breadcrumbs = [], bgImage }:
                 {crumb.to ? (
                   <Link
                     to={crumb.to}
-                    className={`hover:text-saffron-500 transition-colors ${bgImage ? 'text-white/70' : 'text-muted-foreground'}`}
+                    className={`hover:text-navy-500 transition-colors ${bgImage ? 'text-white/70' : 'text-muted-foreground'}`}
                   >
                     {crumb.label}
                   </Link>
@@ -85,7 +85,7 @@ export default function PageHero({ title, subtitle, breadcrumbs = [], bgImage }:
 
         {/* Accent line */}
         <motion.div
-          className="mt-6 w-16 h-1 bg-saffron-500 rounded-full"
+          className="mt-6 w-16 h-1 bg-navy-500 rounded-full"
           initial={{ width: 0 }}
           animate={{ width: 64 }}
           transition={{ duration: 0.6, delay: 0.3 }}

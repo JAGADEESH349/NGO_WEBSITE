@@ -36,7 +36,7 @@ export default function HeroBanner() {
           className="w-full h-full object-cover object-center scale-[1.02]"
         />
         {/* Rich multi-layer overlay for premium depth */}
-        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-saffron-950/30 to-black/70" />
+        <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-navy-950/30 to-black/70" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-black/20" />
       </div>
 
@@ -51,13 +51,13 @@ export default function HeroBanner() {
           >
             {/* Tag */}
             <motion.div
-              className="inline-flex items-center gap-2 bg-saffron-500/20 border border-saffron-400/30 rounded-full px-4 py-1.5 mb-6"
+              className="inline-flex items-center gap-2 bg-navy-500/20 border border-navy-400/30 rounded-full px-4 py-1.5 mb-6"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
             >
-              <span className="w-2 h-2 rounded-full bg-saffron-400 animate-pulse" />
-              <span className="text-saffron-200 text-sm font-medium font-body">Empowering India Since 2014</span>
+              <span className="w-2 h-2 rounded-full bg-navy-400 animate-pulse" />
+              <span className="text-navy-200 text-sm font-medium font-body">Empowering India Since 2014</span>
             </motion.div>
 
             <motion.h1
@@ -89,7 +89,7 @@ export default function HeroBanner() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
             >
-              <Button asChild variant="saffron" size="xl">
+              <Button asChild variant="navy" size="xl">
                 <Link to="/volunteer">Join as Volunteer</Link>
               </Button>
               <Button asChild variant="white-outline" size="xl">

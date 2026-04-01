@@ -17,15 +17,15 @@ export default function VolunteerCTA() {
             animate={isIntersecting ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
           >
-            <div className="inline-flex items-center gap-2 bg-forest-50 dark:bg-forest-950 border border-forest-200 dark:border-forest-800 rounded-full px-4 py-1.5 mb-6">
-              <Users className="w-4 h-4 text-forest-500" />
-              <span className="text-forest-600 dark:text-forest-400 text-sm font-medium font-body">500+ Active Volunteers</span>
+            <div className="inline-flex items-center gap-2 bg-slate-50 dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-full px-4 py-1.5 mb-6">
+              <Users className="w-4 h-4 text-slate-500" />
+              <span className="text-slate-600 dark:text-slate-400 text-sm font-medium font-body">500+ Active Volunteers</span>
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold font-display text-foreground mb-5 leading-tight">
               Be the Change.
               <br />
-              <span className="text-saffron-500">Join 500+ Volunteers</span>
+              <span className="text-navy-500">Join 500+ Volunteers</span>
               <br />
               Making Real Impact.
             </h2>
@@ -43,7 +43,7 @@ export default function VolunteerCTA() {
                 { label: 'Recognition', desc: 'Certificates & awards' },
               ].map(({ label, desc }) => (
                 <div key={label} className="flex items-start gap-2">
-                  <div className="w-2 h-2 rounded-full bg-saffron-500 mt-1.5 flex-shrink-0" />
+                  <div className="w-2 h-2 rounded-full bg-navy-500 mt-1.5 flex-shrink-0" />
                   <div>
                     <p className="font-semibold font-body text-foreground text-sm">{label}</p>
                     <p className="text-muted-foreground text-xs">{desc}</p>
@@ -52,7 +52,7 @@ export default function VolunteerCTA() {
               ))}
             </div>
 
-            <Button asChild variant="saffron" size="lg" className="gap-2">
+            <Button asChild variant="navy" size="lg" className="gap-2">
               <Link to="/volunteer">
                 Become a Volunteer <ArrowRight className="w-4 h-4" />
               </Link>
@@ -77,7 +77,7 @@ export default function VolunteerCTA() {
 
             {/* Floating stat */}
             <motion.div
-              className="absolute -bottom-4 -left-4 bg-saffron-500 text-white rounded-xl p-4 shadow-xl"
+              className="absolute -bottom-4 -left-4 bg-navy-500 text-white rounded-xl p-4 shadow-xl"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={isIntersecting ? { opacity: 1, scale: 1 } : {}}
               transition={{ delay: 0.4 }}
@@ -87,7 +87,7 @@ export default function VolunteerCTA() {
             </motion.div>
 
             <motion.div
-              className="absolute -top-4 -right-4 bg-forest-500 text-white rounded-xl p-4 shadow-xl"
+              className="absolute -top-4 -right-4 bg-slate-500 text-white rounded-xl p-4 shadow-xl"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={isIntersecting ? { opacity: 1, scale: 1 } : {}}
               transition={{ delay: 0.5 }}

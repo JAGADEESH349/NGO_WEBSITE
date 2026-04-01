@@ -29,7 +29,7 @@ export default function AdminLayout() {
       <aside className="w-64 bg-foreground/95 flex flex-col">
         <div className="p-5 border-b border-white/10">
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-saffron-gradient flex items-center justify-center">
+            <div className="w-8 h-8 rounded-full bg-navy-gradient flex items-center justify-center">
               <Sun className="w-4 h-4 text-white" />
             </div>
             <div>
@@ -47,7 +47,7 @@ export default function AdminLayout() {
               className={({ isActive }) => cn(
                 'flex items-center gap-2.5 px-3 py-2.5 rounded-md text-sm font-medium font-body transition-colors',
                 isActive
-                  ? 'bg-saffron-500 text-white'
+                  ? 'bg-navy-500 text-white'
                   : 'text-white/60 hover:bg-white/10 hover:text-white'
               )}
             >

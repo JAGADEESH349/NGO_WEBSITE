@@ -15,7 +15,7 @@ const founders = [
     bio: 'A visionary leader who founded SUN Foundation at 22 with the dream of empowering a million youth. Drives strategy, partnerships, and on-ground operations across AP.',
     tags: ['Strategy', 'Leadership', 'Community Development'],
     initials: 'YR',
-    color: 'bg-saffron-100 dark:bg-saffron-950 text-saffron-600 dark:text-saffron-400',
+    color: 'bg-navy-100 dark:bg-navy-950 text-navy-600 dark:text-navy-400',
   },
   {
     name: 'Krishnaprasad',
@@ -23,7 +23,7 @@ const founders = [
     bio: 'A passionate social entrepreneur with deep roots in rural Andhra Pradesh. Leads all education and healthcare initiatives with a data-driven, compassionate approach.',
     tags: ['Education', 'Healthcare', 'Operations'],
     initials: 'KP',
-    color: 'bg-forest-100 dark:bg-forest-950 text-forest-600 dark:text-forest-400',
+    color: 'bg-slate-100 dark:bg-slate-950 text-slate-600 dark:text-slate-400',
   },
   {
     name: 'Pavan',
@@ -43,12 +43,12 @@ const leadership = [
 ]
 
 const timeline = [
-  { year: '2014', title: 'Foundation Established', desc: 'Three college friends — Yashwanth, Krishnaprasad, and Pavan — started SUN Foundation with ₹50,000 and a vision to serve.', color: 'bg-saffron-500' },
-  { year: '2015', title: 'First Healthcare Camp', desc: 'Organized the first free medical camp serving 200 families in Guntur District.', color: 'bg-forest-500' },
+  { year: '2014', title: 'Foundation Established', desc: 'Three college friends — Yashwanth, Krishnaprasad, and Pavan — started SUN Foundation with ₹50,000 and a vision to serve.', color: 'bg-navy-500' },
+  { year: '2015', title: 'First Healthcare Camp', desc: 'Organized the first free medical camp serving 200 families in Guntur District.', color: 'bg-slate-500' },
   { year: '2017', title: 'Team Expansion', desc: 'Launched 6 specialized teams and expanded to 5 districts in Andhra Pradesh.', color: 'bg-golden' },
-  { year: '2019', title: 'Tech Saala Launched', desc: 'Established India\'s first rural coding school, teaching programming to 500+ students.', color: 'bg-saffron-500' },
+  { year: '2019', title: 'Tech Saala Launched', desc: 'Established India\'s first rural coding school, teaching programming to 500+ students.', color: 'bg-navy-500' },
   { year: '2021', title: 'COVID Response', desc: 'Delivered 1 lakh meals and PPE kits during the pandemic — our biggest mobilization ever.', color: 'bg-red-500' },
-  { year: '2024', title: '50,000 Lives Milestone', desc: 'Celebrated 10 years of impact with 50,000+ lives touched, 500+ active volunteers.', color: 'bg-forest-500' },
+  { year: '2024', title: '50,000 Lives Milestone', desc: 'Celebrated 10 years of impact with 50,000+ lives touched, 500+ active volunteers.', color: 'bg-slate-500' },
 ]
 
 const values = [
@@ -114,18 +114,18 @@ export default function About() {
         <div className="container max-w-7xl mx-auto px-4">
           <Tabs defaultValue="vision" className="space-y-8">
             <TabsList className="flex flex-wrap gap-1 h-auto p-1 bg-muted rounded-xl">
-              <TabsTrigger value="vision" className="data-[state=active]:bg-saffron-500 data-[state=active]:text-white">Our Vision</TabsTrigger>
-              <TabsTrigger value="mission" className="data-[state=active]:bg-saffron-500 data-[state=active]:text-white">Our Mission</TabsTrigger>
-              <TabsTrigger value="values" className="data-[state=active]:bg-saffron-500 data-[state=active]:text-white">Core Values</TabsTrigger>
-              <TabsTrigger value="people" className="data-[state=active]:bg-saffron-500 data-[state=active]:text-white">Our People</TabsTrigger>
+              <TabsTrigger value="vision" className="data-[state=active]:bg-navy-500 data-[state=active]:text-white">Our Vision</TabsTrigger>
+              <TabsTrigger value="mission" className="data-[state=active]:bg-navy-500 data-[state=active]:text-white">Our Mission</TabsTrigger>
+              <TabsTrigger value="values" className="data-[state=active]:bg-navy-500 data-[state=active]:text-white">Core Values</TabsTrigger>
+              <TabsTrigger value="people" className="data-[state=active]:bg-navy-500 data-[state=active]:text-white">Our People</TabsTrigger>
             </TabsList>
 
             <TabsContent value="vision">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
                 <div>
                   <div className="inline-flex items-center gap-2 mb-4">
-                    <Target className="w-5 h-5 text-saffron-500" />
-                    <span className="text-saffron-500 font-semibold font-body text-sm uppercase tracking-widest">Our Vision</span>
+                    <Target className="w-5 h-5 text-navy-500" />
+                    <span className="text-navy-500 font-semibold font-body text-sm uppercase tracking-widest">Our Vision</span>
                   </div>
                   <h2 className="text-4xl font-bold font-display text-foreground mb-5 leading-tight">
                     An India Where Every Child Has a Chance
@@ -141,7 +141,7 @@ export default function About() {
                       'Economic independence for 10,000 women',
                     ].map((goal) => (
                       <li key={goal} className="flex items-start gap-2 text-foreground font-body">
-                        <span className="w-2 h-2 rounded-full bg-saffron-500 mt-2 flex-shrink-0" />
+                        <span className="w-2 h-2 rounded-full bg-navy-500 mt-2 flex-shrink-0" />
                         {goal}
                       </li>
                     ))}
@@ -163,8 +163,8 @@ export default function About() {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   {[
                     { title: 'Healthcare for All', icon: Heart, color: 'text-red-500', bg: 'bg-red-50 dark:bg-red-950', desc: 'Free medical camps, health screenings, maternal care, and mental health awareness programs reaching the most remote communities.' },
-                    { title: 'Education Without Barriers', icon: Eye, color: 'text-forest-500', bg: 'bg-forest-50 dark:bg-forest-950', desc: 'Scholarships, tuition centers, digital labs, and career guidance for students from Class 1 through college — regardless of ability to pay.' },
-                    { title: 'Economic Opportunity', icon: Lightbulb, color: 'text-saffron-500', bg: 'bg-saffron-50 dark:bg-saffron-950', desc: 'Skill training, microenterprise support, women\'s self-help groups, and job placement assistance for the working poor.' },
+                    { title: 'Education Without Barriers', icon: Eye, color: 'text-slate-500', bg: 'bg-slate-50 dark:bg-slate-950', desc: 'Scholarships, tuition centers, digital labs, and career guidance for students from Class 1 through college — regardless of ability to pay.' },
+                    { title: 'Economic Opportunity', icon: Lightbulb, color: 'text-navy-500', bg: 'bg-navy-50 dark:bg-navy-950', desc: 'Skill training, microenterprise support, women\'s self-help groups, and job placement assistance for the working poor.' },
                   ].map((pillar) => (
                     <Card key={pillar.title} className="shadow-sm">
                       <CardContent className="p-6">
@@ -187,8 +187,8 @@ export default function About() {
                   {values.map((v) => (
                     <Card key={v.title} className="shadow-sm hover:shadow-md transition-shadow">
                       <CardContent className="p-6 flex gap-4">
-                        <div className="w-12 h-12 rounded-xl bg-saffron-50 dark:bg-saffron-950 flex items-center justify-center flex-shrink-0">
-                          <v.icon className="w-6 h-6 text-saffron-500" />
+                        <div className="w-12 h-12 rounded-xl bg-navy-50 dark:bg-navy-950 flex items-center justify-center flex-shrink-0">
+                          <v.icon className="w-6 h-6 text-navy-500" />
                         </div>
                         <div>
                           <h3 className="font-bold font-display text-foreground text-lg mb-2">{v.title}</h3>
@@ -216,11 +216,11 @@ export default function About() {
                             </AvatarFallback>
                           </Avatar>
                           <h3 className="font-bold font-display text-foreground text-lg">{founder.name}</h3>
-                          <p className="text-saffron-500 text-sm font-medium font-body mb-3">{founder.role}</p>
+                          <p className="text-navy-500 text-sm font-medium font-body mb-3">{founder.role}</p>
                           <p className="text-muted-foreground text-sm font-body leading-relaxed mb-4">{founder.bio}</p>
                           <div className="flex flex-wrap justify-center gap-1.5">
                             {founder.tags.map((tag) => (
-                              <Badge key={tag} variant="saffron" className="text-xs">{tag}</Badge>
+                              <Badge key={tag} variant="navy" className="text-xs">{tag}</Badge>
                             ))}
                           </div>
                         </CardContent>
@@ -237,7 +237,7 @@ export default function About() {
                       <Card key={leader.name} className="shadow-sm">
                         <CardContent className="p-4 text-center">
                           <Avatar className="w-14 h-14 mx-auto mb-3">
-                            <AvatarFallback className="text-lg font-bold font-display bg-forest-100 dark:bg-forest-950 text-forest-600 dark:text-forest-400">
+                            <AvatarFallback className="text-lg font-bold font-display bg-slate-100 dark:bg-slate-950 text-slate-600 dark:text-slate-400">
                               {leader.initials}
                             </AvatarFallback>
                           </Avatar>
@@ -262,7 +262,7 @@ export default function About() {
             initial={{ opacity: 0, y: 20 }}
             animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
           >
-            <p className="text-saffron-500 font-semibold font-body text-sm uppercase tracking-widest mb-2">Our Journey</p>
+            <p className="text-navy-500 font-semibold font-body text-sm uppercase tracking-widest mb-2">Our Journey</p>
             <h2 className="text-4xl md:text-5xl font-bold font-display text-foreground">A Decade of Change</h2>
           </motion.div>
           <TimelineSection />

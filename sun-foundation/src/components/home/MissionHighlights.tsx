@@ -9,16 +9,16 @@ const features = [
     icon: GraduationCap,
     title: 'Student Empowerment',
     description: 'Nurturing the next generation of leaders through mentorship, scholarships, and skill-building programs.',
-    color: 'text-saffron-500',
-    bg: 'bg-saffron-50 dark:bg-saffron-950',
+    color: 'text-navy-500',
+    bg: 'bg-navy-50 dark:bg-navy-950',
     link: '/works',
   },
   {
     icon: BookOpen,
     title: 'Educational Outreach',
     description: 'Bridging the education gap in rural communities with digital literacy programs and free learning centers.',
-    color: 'text-forest-500',
-    bg: 'bg-forest-50 dark:bg-forest-950',
+    color: 'text-slate-500',
+    bg: 'bg-slate-50 dark:bg-slate-950',
     link: '/works',
   },
   {
@@ -43,7 +43,7 @@ export default function MissionHighlights() {
           animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.5 }}
         >
-          <p className="text-saffron-500 font-semibold font-body text-sm uppercase tracking-widest mb-2">What We Do</p>
+          <p className="text-navy-500 font-semibold font-body text-sm uppercase tracking-widest mb-2">What We Do</p>
           <h2 className="text-4xl md:text-5xl font-bold font-display text-foreground mb-4">
             Our Mission in Action
           </h2>

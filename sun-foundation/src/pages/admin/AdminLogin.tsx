@@ -47,7 +47,7 @@ export default function AdminLogin() {
       <div className="w-full max-w-sm">
         {/* Logo */}
         <div className="text-center mb-8">
-          <div className="w-14 h-14 rounded-full bg-saffron-gradient flex items-center justify-center mx-auto mb-3">
+          <div className="w-14 h-14 rounded-full bg-navy-gradient flex items-center justify-center mx-auto mb-3">
             <Sun className="w-7 h-7 text-white" />
           </div>
           <h1 className="text-2xl font-bold font-display text-white">SUN Foundation</h1>
@@ -65,7 +65,7 @@ export default function AdminLogin() {
                     <Input
                       type="email"
                       placeholder="admin@sun.org"
-                      className="bg-white/10 border-white/20 text-white placeholder:text-white/30 focus-visible:ring-saffron-500"
+                      className="bg-white/10 border-white/20 text-white placeholder:text-white/30 focus-visible:ring-navy-500"
                       {...field}
                     />
                   </FormControl>
@@ -81,7 +81,7 @@ export default function AdminLogin() {
                       <Input
                         type={showPass ? 'text' : 'password'}
                         placeholder="••••••••"
-                        className="bg-white/10 border-white/20 text-white placeholder:text-white/30 focus-visible:ring-saffron-500 pr-10"
+                        className="bg-white/10 border-white/20 text-white placeholder:text-white/30 focus-visible:ring-navy-500 pr-10"
                         {...field}
                       />
                       <button
@@ -99,7 +99,7 @@ export default function AdminLogin() {
 
               <Button
                 type="submit"
-                variant="saffron"
+                variant="navy"
                 className="w-full"
                 disabled={form.formState.isSubmitting}
               >

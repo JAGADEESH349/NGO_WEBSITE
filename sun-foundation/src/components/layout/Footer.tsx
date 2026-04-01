@@ -117,12 +117,12 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2.5 mb-5">
-              <div className="w-10 h-10 rounded-full bg-saffron-gradient flex items-center justify-center shadow-lg shadow-saffron-900/40">
+              <div className="w-10 h-10 rounded-full bg-navy-gradient flex items-center justify-center shadow-lg shadow-navy-900/40">
                 <SunLogo />
               </div>
               <div>
                 <p className="font-bold font-display text-white text-sm leading-tight">SUN Foundation</p>
-                <p className="text-[9px] text-saffron-400/80 tracking-[0.18em] uppercase mt-0.5">Est. 2014</p>
+                <p className="text-[9px] text-navy-400/80 tracking-[0.18em] uppercase mt-0.5">Est. 2014</p>
               </div>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed mb-5">
@@ -138,7 +138,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="w-9 h-9 rounded-xl bg-white/[0.07] hover:bg-saffron-500 text-gray-400 hover:text-white flex items-center justify-center transition-all duration-200 hover:scale-110 hover:shadow-lg hover:shadow-saffron-900/30"
+                  className="w-9 h-9 rounded-xl bg-white/[0.07] hover:bg-navy-500 text-gray-400 hover:text-white flex items-center justify-center transition-all duration-200 hover:scale-110 hover:shadow-lg hover:shadow-navy-900/30"
                 >
                   <Icon />
                 </a>
@@ -156,9 +156,9 @@ export default function Footer() {
                 <li key={link.to}>
                   <Link
                     to={link.to}
-                    className="text-sm text-gray-400 hover:text-saffron-400 transition-colors duration-200 flex items-center gap-2 group"
+                    className="text-sm text-gray-400 hover:text-navy-400 transition-colors duration-200 flex items-center gap-2 group"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-saffron-600 group-hover:bg-saffron-400 flex-shrink-0 transition-colors" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-navy-600 group-hover:bg-navy-400 flex-shrink-0 transition-colors" />
                     {link.label}
                   </Link>
                 </li>
@@ -176,9 +176,9 @@ export default function Footer() {
                 <li key={team}>
                   <Link
                     to="/works#teams"
-                    className="text-sm text-gray-400 hover:text-forest-400 transition-colors duration-200 flex items-center gap-2 group"
+                    className="text-sm text-gray-400 hover:text-slate-400 transition-colors duration-200 flex items-center gap-2 group"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-forest-600 group-hover:bg-forest-400 flex-shrink-0 transition-colors" />
+                    <span className="w-1.5 h-1.5 rounded-full bg-slate-600 group-hover:bg-slate-400 flex-shrink-0 transition-colors" />
                     {team}
                   </Link>
                 </li>
@@ -198,23 +198,23 @@ export default function Footer() {
               <Input
                 type="email"
                 placeholder="your@email.com"
-                className="bg-white/[0.06] border-white/[0.12] text-white placeholder:text-gray-500 focus-visible:ring-saffron-500 focus-visible:border-saffron-500/50 rounded-lg"
+                className="bg-white/[0.06] border-white/[0.12] text-white placeholder:text-gray-500 focus-visible:ring-navy-500 focus-visible:border-navy-500/50 rounded-lg"
               />
-              <Button variant="saffron" size="sm" type="submit" className="w-full font-semibold rounded-lg">
+              <Button variant="navy" size="sm" type="submit" className="w-full font-semibold rounded-lg">
                 Subscribe
               </Button>
             </form>
             <div className="mt-5 space-y-2.5">
-              <a href="mailto:studentunionfornation@gmail.com" className="flex items-center gap-2 text-xs text-gray-400 hover:text-saffron-400 transition-colors group">
-                <Mail className="w-3.5 h-3.5 text-saffron-500 flex-shrink-0" />
+              <a href="mailto:studentunionfornation@gmail.com" className="flex items-center gap-2 text-xs text-gray-400 hover:text-navy-400 transition-colors group">
+                <Mail className="w-3.5 h-3.5 text-navy-500 flex-shrink-0" />
                 studentunionfornation@gmail.com
               </a>
-              <a href="tel:+919494808589" className="flex items-center gap-2 text-xs text-gray-400 hover:text-saffron-400 transition-colors group">
-                <Phone className="w-3.5 h-3.5 text-saffron-500 flex-shrink-0" />
+              <a href="tel:+919494808589" className="flex items-center gap-2 text-xs text-gray-400 hover:text-navy-400 transition-colors group">
+                <Phone className="w-3.5 h-3.5 text-navy-500 flex-shrink-0" />
                 +91 94948 08589
               </a>
               <div className="flex items-start gap-2 text-xs text-gray-400">
-                <MapPin className="w-3.5 h-3.5 text-saffron-500 flex-shrink-0 mt-0.5" />
+                <MapPin className="w-3.5 h-3.5 text-navy-500 flex-shrink-0 mt-0.5" />
                 Andhra Pradesh, India
               </div>
             </div>
@@ -228,7 +228,7 @@ export default function Footer() {
             © {new Date().getFullYear()} SUN Foundation. Registered under Indian Trust Act · Reg. No: AP/2014/0012345
           </p>
           <p className="text-xs text-gray-500 flex items-center gap-1.5">
-            Made with <Heart className="w-3 h-3 text-saffron-500 fill-saffron-500" /> for India
+            Made with <Heart className="w-3 h-3 text-navy-500 fill-navy-500" /> for India
           </p>
         </div>
       </div>

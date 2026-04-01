@@ -38,7 +38,7 @@ export default function ImpactStats() {
       ref={ref as React.RefObject<HTMLElement>}
       className="relative py-20 overflow-hidden"
     >
-      <div className="absolute inset-0 bg-saffron-gradient" />
+      <div className="absolute inset-0 bg-navy-gradient" />
       {/* Pattern overlay */}
       <div
         className="absolute inset-0 opacity-10"

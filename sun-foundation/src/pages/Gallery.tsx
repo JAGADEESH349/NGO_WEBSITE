@@ -79,7 +79,7 @@ export default function Gallery() {
                 onClick={() => setActiveCategory(cat)}
                 className={`px-4 py-1.5 rounded-full text-sm font-medium font-body transition-all ${
                   activeCategory === cat
-                    ? 'bg-saffron-500 text-white shadow-md'
+                    ? 'bg-navy-500 text-white shadow-md'
                     : 'bg-muted text-muted-foreground hover:bg-muted/80'
                 }`}
               >
@@ -112,7 +112,7 @@ export default function Gallery() {
                     <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity" />
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                    <Badge variant="saffron" className="text-xs mb-1">{image.category}</Badge>
+                    <Badge variant="navy" className="text-xs mb-1">{image.category}</Badge>
                     <p className="text-white text-xs font-body line-clamp-1">{image.caption}</p>
                   </div>
                 </motion.div>
@@ -165,7 +165,7 @@ export default function Gallery() {
 
               <div className="p-4 bg-black">
                 <div className="flex items-center gap-2">
-                  <Badge variant="saffron" className="text-xs">{filtered[lightboxIndex].category}</Badge>
+                  <Badge variant="navy" className="text-xs">{filtered[lightboxIndex].category}</Badge>
                   <p className="text-white/80 text-sm font-body">{filtered[lightboxIndex].caption}</p>
                 </div>
                 <p className="text-white/40 text-xs mt-1 font-body">

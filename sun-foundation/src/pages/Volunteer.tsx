@@ -105,7 +105,7 @@ export default function Volunteer() {
       <section className="section-padding bg-background">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="text-center mb-10">
-            <p className="text-saffron-500 font-semibold font-body text-sm uppercase tracking-widest mb-2">Why Volunteer?</p>
+            <p className="text-navy-500 font-semibold font-body text-sm uppercase tracking-widest mb-2">Why Volunteer?</p>
             <h2 className="text-4xl font-bold font-display text-foreground">What You Gain</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
@@ -133,7 +133,7 @@ export default function Volunteer() {
       <section className="section-padding bg-muted/20">
         <div className="container max-w-3xl mx-auto px-4">
           <div className="text-center mb-10">
-            <p className="text-saffron-500 font-semibold font-body text-sm uppercase tracking-widest mb-2">Join Us</p>
+            <p className="text-navy-500 font-semibold font-body text-sm uppercase tracking-widest mb-2">Join Us</p>
             <h2 className="text-4xl font-bold font-display text-foreground">Volunteer Application</h2>
             <p className="text-muted-foreground mt-2 font-body">Fill in your details and we'll contact you within 3 business days.</p>
           </div>
@@ -222,8 +222,8 @@ export default function Volunteer() {
                             onClick={() => toggleSkill(skill)}
                             className={`px-3 py-1 rounded-full text-sm font-body transition-all border ${
                               selectedSkills.includes(skill)
-                                ? 'bg-saffron-500 text-white border-saffron-500'
-                                : 'bg-background text-foreground border-border hover:border-saffron-400'
+                                ? 'bg-navy-500 text-white border-navy-500'
+                                : 'bg-background text-foreground border-border hover:border-navy-400'
                             }`}
                           >
                             {skill}
@@ -249,7 +249,7 @@ export default function Volunteer() {
                               value={opt.value}
                               checked={field.value === opt.value}
                               onChange={() => field.onChange(opt.value)}
-                              className="accent-saffron-500"
+                              className="accent-navy-500"
                             />
                             <span className="text-sm font-body text-foreground">{opt.label}</span>
                           </label>
@@ -261,7 +261,7 @@ export default function Volunteer() {
 
                   <Button
                     type="submit"
-                    variant="saffron"
+                    variant="navy"
                     size="lg"
                     className="w-full"
                     disabled={form.formState.isSubmitting}
@@ -279,7 +279,7 @@ export default function Volunteer() {
       <section className="section-padding bg-background">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="text-center mb-10">
-            <p className="text-saffron-500 font-semibold font-body text-sm uppercase tracking-widest mb-2">From Our Volunteers</p>
+            <p className="text-navy-500 font-semibold font-body text-sm uppercase tracking-widest mb-2">From Our Volunteers</p>
             <h2 className="text-4xl font-bold font-display text-foreground">Their Stories</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -290,7 +290,7 @@ export default function Volunteer() {
                     "{story.story}"
                   </p>
                   <div className="flex items-center gap-3 pt-4 border-t">
-                    <div className="w-10 h-10 rounded-full bg-forest-100 dark:bg-forest-950 flex items-center justify-center font-bold font-display text-forest-600 dark:text-forest-400">
+                    <div className="w-10 h-10 rounded-full bg-slate-100 dark:bg-slate-950 flex items-center justify-center font-bold font-display text-slate-600 dark:text-slate-400">
                       {story.initials}
                     </div>
                     <div>
@@ -310,7 +310,7 @@ export default function Volunteer() {
         <DialogContent className="sm:max-w-md text-center">
           <DialogHeader>
             <div className="flex justify-center mb-4">
-              <CheckCircle2 className="w-16 h-16 text-forest-500" />
+              <CheckCircle2 className="w-16 h-16 text-slate-500" />
             </div>
             <DialogTitle className="text-2xl font-bold font-display">Application Received!</DialogTitle>
             <DialogDescription className="text-base font-body mt-2">
@@ -318,10 +318,10 @@ export default function Volunteer() {
             </DialogDescription>
           </DialogHeader>
           <div className="mt-4 flex flex-col gap-2">
-            <Badge variant="forest" className="mx-auto text-sm px-4 py-1">
+            <Badge variant="slate" className="mx-auto text-sm px-4 py-1">
               You're one step closer to changing lives 🌟
             </Badge>
-            <Button variant="saffron" className="w-full mt-3" onClick={() => setSuccessOpen(false)}>
+            <Button variant="navy" className="w-full mt-3" onClick={() => setSuccessOpen(false)}>
               Close
             </Button>
           </div>

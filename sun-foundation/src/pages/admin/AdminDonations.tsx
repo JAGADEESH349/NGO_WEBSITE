@@ -29,7 +29,7 @@ export default function AdminDonations() {
         <div>
           <h1 className="text-2xl font-bold font-display text-foreground">Donations</h1>
           <p className="text-muted-foreground text-sm font-body">
-            Total shown: <span className="text-saffron-500 font-bold">₹{total.toLocaleString('en-IN')}</span>
+            Total shown: <span className="text-navy-500 font-bold">₹{total.toLocaleString('en-IN')}</span>
           </p>
         </div>
         <Button variant="outline" size="sm" className="gap-1.5 self-start">
@@ -74,11 +74,11 @@ export default function AdminDonations() {
                     {d.pan || <span className="italic">Not provided</span>}
                   </td>
                   <td className="p-4">
-                    <span className="font-bold text-saffron-500">₹{d.amount.toLocaleString('en-IN')}</span>
+                    <span className="font-bold text-navy-500">₹{d.amount.toLocaleString('en-IN')}</span>
                   </td>
                   <td className="p-4 text-muted-foreground text-xs">{d.date}</td>
                   <td className="p-4">
-                    <Badge variant="forest" className="text-xs capitalize">{d.status}</Badge>
+                    <Badge variant="slate" className="text-xs capitalize">{d.status}</Badge>
                   </td>
                 </tr>
               ))}

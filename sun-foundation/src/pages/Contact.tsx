@@ -18,29 +18,29 @@ const contactInfo = [
     icon: MapPin,
     title: 'Headquarters',
     lines: ['123 Gandhi Road', 'Vijayawada, AP 520001', 'Andhra Pradesh, India'],
-    color: 'text-saffron-500',
-    bg: 'bg-saffron-50 dark:bg-saffron-950',
+    color: 'text-navy-500',
+    bg: 'bg-navy-50 dark:bg-navy-950',
   },
   {
     icon: MapPin,
     title: 'Field Office',
     lines: ['Rural Development Center', 'Guntur District, AP', 'Andhra Pradesh, India'],
-    color: 'text-forest-500',
-    bg: 'bg-forest-50 dark:bg-forest-950',
+    color: 'text-slate-500',
+    bg: 'bg-slate-50 dark:bg-slate-950',
   },
   {
     icon: Phone,
     title: 'Phone',
     lines: ['+91 94948 08589', 'Mon–Fri, 9AM–6PM'],
-    color: 'text-saffron-500',
-    bg: 'bg-saffron-50 dark:bg-saffron-950',
+    color: 'text-navy-500',
+    bg: 'bg-navy-50 dark:bg-navy-950',
   },
   {
     icon: Mail,
     title: 'Email',
     lines: ['studentunionfornation@gmail.com', 'We reply within 24 hours'],
-    color: 'text-forest-500',
-    bg: 'bg-forest-50 dark:bg-forest-950',
+    color: 'text-slate-500',
+    bg: 'bg-slate-50 dark:bg-slate-950',
   },
   {
     icon: Clock,
@@ -169,7 +169,7 @@ export default function Contact() {
 
                       <Button
                         type="submit"
-                        variant="saffron"
+                        variant="navy"
                         size="lg"
                         className="w-full"
                         disabled={form.formState.isSubmitting}
@@ -222,7 +222,7 @@ export default function Contact() {
               </Card>
 
               {/* Social quick links */}
-              <Card className="shadow-sm bg-saffron-50 dark:bg-saffron-950/30 border-saffron-100 dark:border-saffron-900">
+              <Card className="shadow-sm bg-navy-50 dark:bg-navy-950/30 border-navy-100 dark:border-navy-900">
                 <CardContent className="p-4">
                   <p className="font-semibold font-body text-foreground text-sm mb-3">Follow Our Work</p>
                   <div className="flex gap-3">
@@ -236,7 +236,7 @@ export default function Contact() {
                         href={href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1.5 text-sm font-body text-foreground hover:text-saffron-500 transition-colors"
+                        className="flex items-center gap-1.5 text-sm font-body text-foreground hover:text-navy-500 transition-colors"
                       >
                         {icon} {label}
                       </a>

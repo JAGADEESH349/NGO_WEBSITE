@@ -15,7 +15,7 @@ const teams = [
     description: 'Fighting hunger one meal at a time — organizing community kitchens and food drives.',
     image: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&q=80',
     color: 'bg-orange-50 dark:bg-orange-950',
-    badge: 'saffron' as const,
+    badge: 'navy' as const,
   },
   {
     name: 'Life Saviours',
@@ -60,7 +60,7 @@ const teams = [
     description: 'Mentoring students from underprivileged backgrounds for academic and career success.',
     image: 'https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&q=80',
     color: 'bg-green-50 dark:bg-green-950',
-    badge: 'forest' as const,
+    badge: 'slate' as const,
   },
 ]
 
@@ -80,7 +80,7 @@ export default function OurTeamsCarousel() {
           animate={isIntersecting ? { opacity: 1, y: 0 } : {}}
         >
           <div>
-            <p className="text-saffron-500 font-semibold font-body text-sm uppercase tracking-widest mb-2">Our Teams</p>
+            <p className="text-navy-500 font-semibold font-body text-sm uppercase tracking-widest mb-2">Our Teams</p>
             <h2 className="text-4xl md:text-5xl font-bold font-display text-foreground">
               Meet the Change-Makers
             </h2>

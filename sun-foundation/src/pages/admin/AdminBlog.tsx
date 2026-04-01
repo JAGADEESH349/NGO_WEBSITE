@@ -60,7 +60,7 @@ export default function AdminBlog() {
           <h1 className="text-2xl font-bold font-display text-foreground">Blog</h1>
           <p className="text-muted-foreground text-sm font-body">{posts.length} posts total</p>
         </div>
-        <Button variant="saffron" size="sm" onClick={handleNew} className="gap-1.5 self-start">
+        <Button variant="navy" size="sm" onClick={handleNew} className="gap-1.5 self-start">
           <Plus className="w-4 h-4" /> New Post
         </Button>
       </div>
@@ -72,7 +72,7 @@ export default function AdminBlog() {
               <div key={post.id} className="p-4 flex items-center justify-between hover:bg-muted/20 transition-colors">
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2 flex-wrap">
-                    <Badge variant={post.status === 'published' ? 'forest' : 'saffron'} className="text-xs">{post.status}</Badge>
+                    <Badge variant={post.status === 'published' ? 'slate' : 'navy'} className="text-xs">{post.status}</Badge>
                     <Badge variant="outline" className="text-xs">{post.category}</Badge>
                   </div>
                   <p className="font-semibold font-body text-foreground mt-1 truncate">{post.title}</p>
@@ -164,7 +164,7 @@ export default function AdminBlog() {
             </div>
             <div className="flex gap-2 justify-end">
               <Button variant="outline" onClick={() => setEditorOpen(false)}>Cancel</Button>
-              <Button variant="saffron" onClick={handleSave}>Save Post</Button>
+              <Button variant="navy" onClick={handleSave}>Save Post</Button>
             </div>
           </div>
         </DialogContent>

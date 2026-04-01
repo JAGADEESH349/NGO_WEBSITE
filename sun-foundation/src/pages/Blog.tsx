@@ -32,7 +32,7 @@ const blogPosts = [
     author: { name: 'Yashwanth', initials: 'YR', role: 'Co-Founder' },
     date: 'Mar 18, 2026',
     readTime: 7,
-    badge: 'saffron' as const,
+    badge: 'navy' as const,
   },
   {
     slug: 'meeras-story-elite-queens',
@@ -54,7 +54,7 @@ const blogPosts = [
     author: { name: 'Life Saviours Team', initials: 'LS', role: 'Healthcare Team' },
     date: 'Feb 28, 2026',
     readTime: 8,
-    badge: 'saffron' as const,
+    badge: 'navy' as const,
   },
   {
     slug: '10-years-of-sun-foundation',
@@ -65,7 +65,7 @@ const blogPosts = [
     author: { name: 'Yashwanth', initials: 'YR', role: 'Co-Founder' },
     date: 'Feb 15, 2026',
     readTime: 12,
-    badge: 'forest' as const,
+    badge: 'slate' as const,
   },
   {
     slug: 'guiding-lights-mentorship-success',
@@ -76,7 +76,7 @@ const blogPosts = [
     author: { name: 'Guiding Lights Team', initials: 'GL', role: 'Education Team' },
     date: 'Jan 30, 2026',
     readTime: 5,
-    badge: 'forest' as const,
+    badge: 'slate' as const,
   },
 ]
 
@@ -170,7 +170,7 @@ export default function Blog() {
                     <div className="flex items-center justify-between mt-auto pt-3 border-t">
                       <div className="flex items-center gap-2">
                         <Avatar className="w-7 h-7">
-                          <AvatarFallback className="text-xs bg-saffron-100 dark:bg-saffron-950 text-saffron-600 dark:text-saffron-400">
+                          <AvatarFallback className="text-xs bg-navy-100 dark:bg-navy-950 text-navy-600 dark:text-navy-400">
                             {post.author.initials}
                           </AvatarFallback>
                         </Avatar>
@@ -179,7 +179,7 @@ export default function Blog() {
                           <p className="text-xs text-muted-foreground">{post.author.role}</p>
                         </div>
                       </div>
-                      <Button asChild variant="ghost" size="sm" className="text-saffron-500 p-0 h-auto gap-1 hover:text-saffron-600">
+                      <Button asChild variant="ghost" size="sm" className="text-navy-500 p-0 h-auto gap-1 hover:text-navy-600">
                         <Link to={`/blog/${post.slug}`}>
                           Read <ArrowRight className="w-3.5 h-3.5" />
                         </Link>
@@ -214,7 +214,7 @@ export default function Blog() {
               {Array.from({ length: totalPages }, (_, i) => (
                 <Button
                   key={i + 1}
-                  variant={page === i + 1 ? 'saffron' : 'outline'}
+                  variant={page === i + 1 ? 'navy' : 'outline'}
                   size="sm"
                   onClick={() => setPage(i + 1)}
                 >

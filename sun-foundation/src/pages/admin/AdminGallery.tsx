@@ -41,7 +41,7 @@ export default function AdminGallery() {
           <h1 className="text-2xl font-bold font-display text-foreground">Gallery</h1>
           <p className="text-muted-foreground text-sm font-body">{images.length} images</p>
         </div>
-        <Button variant="saffron" size="sm" onClick={() => fileRef.current?.click()} className="gap-1.5">
+        <Button variant="navy" size="sm" onClick={() => fileRef.current?.click()} className="gap-1.5">
           <Plus className="w-4 h-4" /> Upload Images
         </Button>
       </div>
@@ -63,13 +63,13 @@ export default function AdminGallery() {
         onDragOver={(e) => { e.preventDefault(); setDragOver(true) }}
         onDragLeave={() => setDragOver(false)}
         className={`border-2 border-dashed rounded-xl p-8 text-center transition-colors ${
-          dragOver ? 'border-saffron-500 bg-saffron-50 dark:bg-saffron-950/20' : 'border-border'
+          dragOver ? 'border-navy-500 bg-navy-50 dark:bg-navy-950/20' : 'border-border'
         }`}
       >
         <Upload className="w-8 h-8 text-muted-foreground mx-auto mb-2" />
         <p className="text-muted-foreground font-body text-sm">
           Drag & drop images here, or{' '}
-          <button onClick={() => fileRef.current?.click()} className="text-saffron-500 hover:underline">
+          <button onClick={() => fileRef.current?.click()} className="text-navy-500 hover:underline">
             browse files
           </button>
         </p>
