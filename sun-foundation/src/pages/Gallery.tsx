@@ -12,7 +12,7 @@ const categories = ['All', 'Education', 'Healthcare', 'Events', 'Team']
 // SUN Foundation images
 const galleryImages = Array.from({ length: 48 }, (_, i) => ({
   id: String(i + 1),
-  url: `https://studentunionfornation.org/sunimages/sun${i + 1}.jpg`,
+  url: `https://picsum.photos/seed/sun${i + 1}/600/400`,
   caption: [
     'Students learning digital skills at Tech Saala',
     'Free health camp serving rural families',

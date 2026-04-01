@@ -17,7 +17,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: 'Headquarters',
-    lines: ['123 Gandhi Road', 'Vijayawada, AP 520001', 'Andhra Pradesh, India'],
+    lines: ['Rajampet', 'Rajampet, AP 516115', 'Andhra Pradesh, India'],
     color: 'text-navy-500',
     bg: 'bg-navy-50 dark:bg-navy-950',
   },
@@ -31,14 +31,14 @@ const contactInfo = [
   {
     icon: Phone,
     title: 'Phone',
-    lines: ['+91 94948 08589', 'Mon–Fri, 9AM–6PM'],
+    lines: ['+91 6305509496', 'Mon–Fri, 9AM–6PM'],
     color: 'text-navy-500',
     bg: 'bg-navy-50 dark:bg-navy-950',
   },
   {
     icon: Mail,
     title: 'Email',
-    lines: ['studentunionfornation@gmail.com', 'We reply within 24 hours'],
+    lines: ['mulajagadeesh119@gmail.com', 'We reply within 24 hours'],
     color: 'text-slate-500',
     bg: 'bg-slate-50 dark:bg-slate-950',
   },
@@ -76,7 +76,7 @@ export default function Contact() {
     <>
       <Helmet>
         <title>Contact Us — SUN Foundation</title>
-        <meta name="description" content="Get in touch with SUN Foundation for volunteering, partnerships, donations, or media enquiries. Based in Vijayawada, Andhra Pradesh." />
+        <meta name="description" content="Get in touch with SUN Foundation for volunteering, partnerships, donations, or media enquiries. Based in Rajampet, Andhra Pradesh." />
       </Helmet>
 
       <PageHero
@@ -209,8 +209,8 @@ export default function Contact() {
               <Card className="shadow-sm overflow-hidden">
                 <div className="w-full h-64">
                   <iframe
-                    title="SUN Foundation Location - Vijayawada, AP"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61426.35!2d80.6199!3d16.5061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a35eff9478f9c75%3A0xbfb4a2a64effa3ad!2sVijayawada%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1!"
+                    title="SUN Foundation Location - Rajampet, AP"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30817.83!2d79.1567!3d14.1875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4c8f3b1b1b1b1b%3A0x1b1b1b1b1b1b1b1b!2sRajampet%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1!"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -229,7 +229,7 @@ export default function Contact() {
                     {[
                       { label: 'Instagram', href: 'https://instagram.com/student_union_for_nation', icon: '📸' },
                       { label: 'Facebook', href: 'https://facebook.com', icon: '👍' },
-                      { label: 'WhatsApp', href: 'https://wa.me/919494808589', icon: '💬' },
+                      { label: 'WhatsApp', href: 'https://wa.me/916305509496', icon: '💬' },
                     ].map(({ label, href, icon }) => (
                       <a
                         key={label}

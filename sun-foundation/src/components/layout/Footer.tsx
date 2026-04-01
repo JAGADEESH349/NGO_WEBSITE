@@ -81,7 +81,7 @@ const socialLinks = [
   },
   {
     label: 'WhatsApp',
-    href: 'https://wa.me/919494808589',
+    href: 'https://wa.me/916305509496',
     Icon: WhatsAppIcon,
   },
 ]
@@ -205,17 +205,17 @@ export default function Footer() {
               </Button>
             </form>
             <div className="mt-5 space-y-2.5">
-              <a href="mailto:studentunionfornation@gmail.com" className="flex items-center gap-2 text-xs text-gray-400 hover:text-navy-400 transition-colors group">
+              <a href="mailto:mulajagadeesh119@gmail.com" className="flex items-center gap-2 text-xs text-gray-400 hover:text-navy-400 transition-colors group">
                 <Mail className="w-3.5 h-3.5 text-navy-500 flex-shrink-0" />
-                studentunionfornation@gmail.com
+                mulajagadeesh119@gmail.com
               </a>
-              <a href="tel:+919494808589" className="flex items-center gap-2 text-xs text-gray-400 hover:text-navy-400 transition-colors group">
+              <a href="tel:+916305509496" className="flex items-center gap-2 text-xs text-gray-400 hover:text-navy-400 transition-colors group">
                 <Phone className="w-3.5 h-3.5 text-navy-500 flex-shrink-0" />
-                +91 94948 08589
+                +91 6305509496
               </a>
               <div className="flex items-start gap-2 text-xs text-gray-400">
                 <MapPin className="w-3.5 h-3.5 text-navy-500 flex-shrink-0 mt-0.5" />
-                Andhra Pradesh, India
+                Rajampet, Andhra Pradesh, India
               </div>
             </div>
           </div>
