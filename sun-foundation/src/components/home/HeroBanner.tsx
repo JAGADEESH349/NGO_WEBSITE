@@ -31,7 +31,7 @@ export default function HeroBanner() {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1594736797933-d0501ba2fe65?w=1920&q=80"
+          src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1920&q=80"
           alt="Community volunteers working together"
           className="w-full h-full object-cover object-center scale-[1.02]"
         />
